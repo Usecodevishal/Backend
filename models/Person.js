@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const personSchema = new mongoose.Schema({
     name:{
@@ -30,8 +31,8 @@ const personSchema = new mongoose.Schema({
         type: Number,
         required: true
     }
-},{timestamps: true});
+},{timestamps:true});
 
  const Person = mongoose.model("Person", personSchema);
  
- module.exports = Person;
+ export default Person;
