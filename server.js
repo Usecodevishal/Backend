@@ -7,10 +7,13 @@ import db from "./db.js"
 import bodyParser from "body-parser";
 app.use(bodyParser.json());
 
-import dotenv from "dotenv";
+import "dotenv/config";
+
+// import dotenv from "dotenv";
 
 
-dotenv.config({path: "./env"});
+// dotenv.config({path: "./env"});
+
 
 
 
@@ -62,9 +65,11 @@ app.get("/menu", async(req, res) => {
 
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
+
 
 app.listen(PORT, () => {
     console.log("listening on port 3000");
+    
 });
 
