@@ -5,10 +5,10 @@ import "dotenv/config";
 
 //dotenv.config({path: "./env"});
 
- const MONGOO_URL = process.env.LOCALMONGO_URL;
+ //const MONGOO_URL = process.env.LOCALMONGO_URL;
  const MONGODB_URL = process.env.MONGODB_ATLAS;
 
-const mongooUrl = "mongodb://localhost:27017/hotels";
+//const mongooUrl = "mongodb://localhost:27017/hotels";
 mongoose.connect(MONGODB_URL, {
     
 })
